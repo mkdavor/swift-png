@@ -1,7 +1,9 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.9
 import PackageDescription
 
-let package:Package = .init(name: "swift-png",
+let package = Package(
+    name: "swift-png",
+    platforms: [.macOS(.v13), .iOS(.v16)],
     products:
     [
         .library(   name: "PNG",                        targets: ["PNG"]),
